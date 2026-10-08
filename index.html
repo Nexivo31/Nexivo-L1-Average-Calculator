@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L1 Average Calculator</title>
+  <link rel="stylesheet" href="style-1.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="page">
+    <header class="header">
+      <h1><span class="grad">L1 Average</span> Calculator</h1>
+      <p class="header-sub">Calculate Your Average Easier</p>
+    </header>
+    <div class="sem-zone">
+      <span class="sem-label">Semester</span>
+      <button id="btnS1" class="btn-sem actif">S1</button>
+      <button id="btnS2" class="btn-sem">S2</button>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Module</th>
+          <th>Coef</th>
+          <th>TD</th>
+          <th>TP</th>
+          <th>Exam</th>
+        </tr>
+      </thead>
+      <tbody id="corps"></tbody>
+    </table>
+    <button id="btnCalculer" class="btn-calc">Calculate my Average </button>
+    <div id="resultat" class="resultat">
+      <p class="res-label">Semester Average</p>
+      <p id="affNote" class="res-note"></p>
+      <p id="affMention" class="res-mention"></p>
+      <div id="listeMods"></div>
+      <button id="btnReset" class="btn-reset"> Reset</button>
+    </div>
+  </div>
+  <footer>
+    <p class="footer-text">Developed by</p>
+    <a href="https://www.instagram.com/nexivo_dz?stkn=cW9mdzY2ZTJyN3Rx" target="_blank" class="footer-link">
+      <svg class="insta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+        <circle cx="12" cy="12" r="4"></circle>
+        <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle>
+      </svg>
+      @Nexivo_Dz
+    </a>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
